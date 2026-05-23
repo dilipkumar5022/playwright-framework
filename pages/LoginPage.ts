@@ -25,9 +25,9 @@ export class LoginPage{
         await expect(this.page).toHaveURL('https://www.saucedemo.com/inventory.html')
     }
     async verfiyErrorMessage(){
-        await expect(this.page.getByText('Epic sadface: Username and password do not match any user in this service').isVisible())
+        await expect(this.page.getByText('Epic sadface: Username and password do not match any user in this service')).toBeVisible()
     }
     async verfiyLockeduser(){
-        await expect(this.page.getByText('Epic sadface: Username and password do not match any user in this service').isVisible())
+        await expect(this.page.getByText('Epic sadface: Username and password do not match any user in this service')).toBeVisible()
     }
 }
